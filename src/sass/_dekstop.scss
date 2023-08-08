@@ -1,0 +1,1005 @@
+/* desktop nav */
+
+@media only screen and (min-width: 992px) {
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.burger-btn {
+			display: none;
+		}
+
+		.logo {
+			img {
+				height: 6.5rem;
+			}
+		}
+
+		.menu-links {
+			position: unset;
+			background: inherit;
+			flex-direction: row;
+			align-items: center;
+			padding: 1em 2em;
+			transform: translateX(0);
+			color: black;
+			font-weight: normal;
+			height: inherit;
+			width: max-content;
+			gap: 3em;
+			font-size: 1.3rem;
+
+			.links {
+				position: relative;
+
+				a {
+					color: black;
+				}
+			}
+
+			.links::after {
+				content: '';
+				position: absolute;
+				width: 0%;
+				height: 0.2rem;
+				background-color: #328b32;
+				bottom: -0.2em;
+				left: 0;
+				border-radius: 2rem;
+				transition: width 0.3s ease-in-out;
+			}
+
+			.links:hover::after {
+				width: 100%;
+			}
+
+			.links:last-child {
+				padding: 0.5em 1em;
+				background-color: #3bb78f;
+				background-color: #146b50;
+				background-image: linear-gradient(315deg, #1a684f 0%, #1fbe34 74%);
+				border-radius: 2em;
+				transition: background-color 0.3s;
+			}
+
+			.links:last-child::after {
+				content: '';
+				width: 0%;
+			}
+
+			.links:hover:last-child {
+				background-color: #146b50;
+				background-image: linear-gradient(315deg, #1a684f 20%, #1fbe34 94%);
+			}
+		}
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.header-img {
+		background-position: 50% 35%;
+		height: 400px;
+
+		.header-text {
+			h1 {
+				font-size: 2.5rem;
+				width: 100vw;
+			}
+		}
+	}
+
+	.about-me {
+		.about-me-area {
+			display: flex;
+			flex-direction: row-reverse;
+			margin-top: 4em;
+			padding: 2em 3.5em;
+
+			.about-me-text {
+				margin-bottom: 5em;
+
+				h3,
+				p {
+					padding: 0.3em 1.6em;
+				}
+
+				h3 {
+					font-size: 2rem;
+				}
+				p {
+					font-size: 1.1rem;
+				}
+			}
+			.my-photo {
+				img {
+					height: 550px;
+					width: 400px;
+				}
+			}
+		}
+	}
+
+	.how-to-play {
+		.how-to-play-text {
+			p {
+				font-size: 1.1rem;
+			}
+
+			ul {
+				li {
+					font-size: 1.1rem;
+				}
+			}
+
+			a:hover {
+				color: #0d6d0d;
+			}
+		}
+		.fpl-img {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 4em;
+
+			.fpl-banner,
+			.fpl-banner-two {
+				border: 2px solid #7f53ac;
+				height: 430px;
+				width: 390px;
+			}
+
+			.move-to-fpl,
+			.know-prices {
+				font-size: 1.4rem;
+			}
+
+			.move-to-fpl:hover,
+			.know-prices:hover {
+				background-image: linear-gradient(255deg, #240542 60%, #5a2d94 94%);
+			}
+
+			.fpl-banner-two {
+				display: flex;
+				justify-content: center;
+				align-items: end;
+				background-size: cover;
+				background-position: center;
+				background-image: url('../img/price_players.jpg');
+
+				.know-prices {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.treasury {
+		.boxes-area {
+			.recommemnded-players {
+				.players-options {
+					.first-table,
+					.second-table {
+						width: 90%;
+						font-size: 1.4rem;
+
+						th,
+						td {
+							padding: 0.3em;
+						}
+					}
+				}
+			}
+
+			.news-768px {
+				display: none;
+			}
+			.news-992px {
+				display: flex;
+			}
+
+			.as-interview {
+				.questionnaire-area {
+					ul {
+						li {
+							font-size: 1.4rem;
+							margin-left: 6em;
+						}
+					}
+				}
+
+				.myscores-area {
+					.my-team,
+					.last-gw {
+						img {
+							height: 500px;
+							width: 480px;
+						}
+					}
+				}
+			}
+
+			.change-table:hover,
+			.btn-vote:hover {
+				background-color: #3acc5a;
+			}
+
+			.social-media-area {
+				.social-icons {
+					.fa-square-facebook:hover {
+						color: #1e43e7;
+					}
+					.fa-youtube:hover {
+						color: rgb(226, 0, 0);
+					}
+					.fa-spotify:hover {
+						color: rgb(0, 187, 0);
+					}
+				}
+
+				.latest-content {
+					.facebook-latest-post:hover {
+						background-color: #376ce0;
+					}
+
+					.youtube-latest-film:hover {
+						background-color: #da3d45;
+					}
+
+					.spotify-latest-podcast:hover {
+						background-color: #29aa33;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		h3 {
+			font-size: 1.5rem;
+		}
+		.contact-btns {
+			.send-btn:hover,
+			.clear-btn:hover {
+				background-color: #5c1f99;
+			}
+		}
+	}
+}
+
+.cookie-btn:hover {
+	background-color: #38a049;
+}
+
+@media only screen and (min-width: 1200px) {
+	nav {
+		.logo {
+			img {
+				height: 6.5rem;
+			}
+		}
+
+		.menu-links {
+			font-size: 1.2rem;
+		}
+	}
+
+	.header-img {
+		height: 450px;
+		background-position: 50% 35%;
+
+		.header-text {
+			h1 {
+				font-size: 3rem;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.about-me {
+		.about-me-area {
+			margin-top: 2em;
+			padding: 5em;
+
+			.about-me-text {
+				h3,
+				p {
+					padding: 0.3em 1.5em;
+				}
+
+				h3 {
+					font-size: 2.1rem;
+				}
+				p {
+					font-size: 1.2rem;
+				}
+			}
+
+			.my-photo {
+				padding: 0.5em 3.5em;
+				img {
+					height: 580px;
+					width: 460px;
+				}
+			}
+		}
+	}
+
+	.how-to-play {
+		.how-to-play-area {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+
+			.how-to-play-text {
+				width: 1100px;
+				p {
+					font-size: 1rem;
+				}
+
+				ul {
+					li {
+						font-size: 1rem;
+					}
+				}
+			}
+			.fpl-img {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				.fpl-banner,
+				.fpl-banner-two {
+					margin: 8em;
+					height: 580px;
+					width: 380px;
+				}
+			}
+		}
+	}
+
+	.treasury {
+		.boxes-area {
+			.recommemnded-players {
+				.players-options {
+					.first-table,
+					.second-table {
+						width: 90%;
+						font-size: 1.3rem;
+
+						th,
+						td {
+							padding: 0.3em;
+						}
+					}
+				}
+			}
+
+			.news-768px {
+				display: none;
+			}
+			.news-992px {
+				display: flex;
+			}
+
+			.as-interview {
+				.questionnaire-area {
+					ul {
+						li {
+							font-size: 1.3rem;
+							margin-left: 6em;
+						}
+					}
+				}
+
+				.myscores-area {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+
+					.my-team,
+					.last-gw {
+						img {
+							height: 480px;
+							width: 480px;
+						}
+					}
+
+					.my-team {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		padding: 3em;
+		h3 {
+			padding-bottom: 0;
+			margin-bottom: 1em;
+			padding: 2em;
+			font-size: 1.8rem;
+		}
+		.input-area {
+			margin: 0.8em;
+			label,
+			input,
+			textarea {
+				min-width: 550px;
+			}
+		}
+
+		.checkbox {
+			font-size: 0.9rem;
+			width: 550px;
+		}
+
+		.contact-btns {
+			.send-btn,
+			.clear-btn {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.header-img {
+		background-position: 50% 35%;
+		height: 420px;
+
+		.header-text {
+			h1 {
+				font-size: 3.2rem;
+				width: 100vw;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.about-me {
+		.about-me-area {
+			margin-top: 5em;
+			padding: 5em;
+
+			.about-me-text {
+				h3,
+				p {
+					padding: 0.5em 1.5em;
+					margin-right: 1em;
+					width: 750px;
+				}
+
+				h3 {
+					font-size: 2rem;
+				}
+				p {
+					font-size: 1.2rem;
+				}
+			}
+
+			.my-photo {
+				padding: 0.5em 3.5em;
+				img {
+					height: 580px;
+					width: 440px;
+				}
+			}
+		}
+	}
+
+	.how-to-play {
+		.how-to-play-area {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+
+			.how-to-play-text {
+				width: 1000px;
+				p {
+					font-size: 1.1rem;
+				}
+
+				ul {
+					li {
+						font-size: 1.1rem;
+					}
+				}
+			}
+			.fpl-img {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+
+				.fpl-banner,
+				.fpl-banner-two {
+					margin: 5em;
+					height: 650px;
+					width: 480px;
+				}
+			}
+		}
+	}
+
+	.treasury {
+		background-color: #593081;
+		background-image: linear-gradient(315deg, #9d77c4 50%, #647dee 94%);
+		.boxes-area {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			padding: 5em;
+
+			.area {
+				border-bottom: none;
+				border: 3px solid rgb(255, 255, 255);
+				border-radius: 15px;
+				width: 30%;
+				height: 615px;
+
+				h3 {
+					border-bottom: 2px solid white;
+				}
+			}
+			.recommemnded-players {
+				margin: 2em;
+
+				h3 {
+					padding: 0.6em;
+				}
+
+				.players-options {
+					.first-table,
+					.second-table {
+						font-size: 1.3rem;
+
+						th,
+						td {
+							padding: 0.3em;
+						}
+					}
+				}
+			}
+
+			.as-interview {
+				display: none;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				width: 100%;
+
+				.myscores-area {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+				}
+			}
+
+			.news-1400px {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+
+				h3 {
+					border-bottom: none;
+				}
+			}
+
+			.news-992px {
+				display: none;
+			}
+
+			.social-media-area {
+				.social-icons {
+					position: relative;
+					bottom: 1em;
+
+					i {
+						margin: 0.6em 0.4em;
+					}
+				}
+
+				.latest-content {
+					position: relative;
+					bottom: 1.2em;
+				}
+			}
+		}
+
+		.as-interview-area-box {
+			display: block;
+			background-color: #593081;
+			background-image: linear-gradient(315deg, #9d77c4 50%, #647dee 94%);
+
+			h3 {
+				padding: 1.2em;
+				font-size: 1.8rem;
+				text-align: center;
+				color: white;
+				border-bottom: 2px solid white;
+				border-top: 2px solid white;
+			}
+
+			.as-interview-1900px {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				padding: 6em 3em;
+
+				.questionnaire-area {
+					border: 2px solid white;
+					background-color: rgba(98, 15, 153, 0.274);
+					border-radius: 8px;
+					width: 25%;
+					padding: 2.5em;
+
+					h4 {
+						padding: 1em;
+						font-size: 1.6rem;
+						text-align: center;
+						color: #ffffff;
+					}
+
+					.vote-cast-second {
+						display: none;
+						position: absolute;
+						padding: 2em;
+						border: 2px solid black;
+						border-radius: 8px;
+						background-color: rgb(255, 255, 255);
+						width: 20%;
+						animation: show-vote-popup 8s forwards;
+						transition: animation 0.3s;
+						p {
+							text-align: center;
+							font-size: 1rem;
+							font-weight: bold;
+						}
+
+						@keyframes show-vote-popup {
+							0% {
+								opacity: 0;
+							}
+							50% {
+								opacity: 1;
+							}
+							100% {
+								opacity: 0;
+							}
+						}
+					}
+
+					ul {
+						li {
+							padding: 0.7em;
+							list-style: none;
+							font-size: 1.4rem;
+						}
+					}
+
+					.btn-vote-second {
+						position: relative;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, 10%);
+						padding: 0.4em 4em;
+						font-size: 1.2rem;
+						border: none;
+						border-radius: 5px;
+						transition: background-color 0.3s;
+						cursor: pointer;
+					}
+
+					.btn-vote-second:hover {
+						background-color: #3acc5a;
+					}
+				}
+
+				.myscores-area {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+
+					.my-team,
+					.last-gw {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						padding: 3.5em;
+						img {
+							height: 420px;
+							width: 420px;
+							border: 2px solid rgb(255, 255, 255);
+							border-radius: 15px;
+						}
+
+						h4 {
+							padding: 1.4em;
+							text-align: center;
+							font-size: 1.6rem;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		.input-area {
+			label,
+			input,
+			textarea {
+				min-width: 650px;
+			}
+		}
+
+		.checkbox {
+			width: 650px;
+		}
+
+		.contact-btns {
+			.send-btn,
+			.clear-btn {
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1900px) {
+	nav {
+		position: sticky;
+	}
+	.header-img {
+		background-position: 70% 30%;
+		height: 450px;
+
+		.header-text {
+			h1 {
+				font-size: 4rem;
+				padding: 0.3em;
+				width: 100vw;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 2.1rem;
+	}
+
+	.about-me {
+		.about-me-area {
+			display: flex;
+			justify-content: space-evenly;
+			padding: 6em 18em;
+
+			.about-me-text {
+				width: 660px;
+				margin-bottom: 4em;
+
+				h3 {
+					font-size: 2.3rem;
+				}
+				p {
+					text-align: left;
+					font-size: 1.2rem;
+				}
+			}
+
+			.my-photo {
+				padding: 0.5em 2.5em;
+				img {
+					height: 580px;
+					width: 460px;
+				}
+			}
+		}
+	}
+
+	.how-to-play {
+		.how-to-play-area {
+			.how-to-play-text {
+				width: 1400px;
+				p {
+					font-size: 1.1rem;
+				}
+
+				ul {
+					li {
+						font-size: 1.1rem;
+					}
+				}
+			}
+			.fpl-img {
+				.fpl-banner,
+				.fpl-banner-two {
+					margin: 3em;
+					height: 460px;
+					width: 420px;
+				}
+			}
+		}
+	}
+
+	.treasury {
+		.boxes-area {
+			.recommemnded-players {
+				margin: 2em;
+				width: 30%;
+				.players-options {
+					.first-table,
+					.second-table {
+						width: 90%;
+						font-size: 1.5rem;
+					}
+				}
+			}
+
+			.news-1400px {
+				display: none;
+			}
+
+			.news-1900px {
+				display: flex;
+				justify-content: start;
+				align-items: center;
+
+				h3 {
+					border-bottom: none;
+				}
+			}
+
+			.social-media-area {
+				.social-icons {
+					position: relative;
+					bottom: 1em;
+
+					i {
+						margin: 1em 0.8em;
+					}
+				}
+
+				.latest-content {
+					position: relative;
+					bottom: 1.2em;
+				}
+			}
+		}
+
+		.as-interview-area-box {
+			display: block;
+			background-color: #593081;
+			background-image: linear-gradient(315deg, #9d77c4 50%, #647dee 94%);
+
+			h3 {
+				padding: 1.2em;
+				font-size: 1.8rem;
+				text-align: center;
+				color: white;
+				border-bottom: 2px solid white;
+				border-top: 2px solid white;
+			}
+
+			.as-interview-1900px {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+
+				.questionnaire-area {
+					border: 2px solid white;
+					background-color: rgba(98, 15, 153, 0.274);
+					border-radius: 8px;
+					width: 25%;
+					padding: 2.5em;
+
+					h4 {
+						padding: 1em;
+						font-size: 1.6rem;
+						text-align: center;
+						color: #ffffff;
+					}
+
+					ul {
+						li {
+							padding: 0.8em;
+							list-style: none;
+							font-size: 1.5rem;
+						}
+					}
+
+					.btn-vote {
+						position: relative;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, 5%);
+						padding: 0.4em 4em;
+						font-size: 1.2rem;
+						border: none;
+						border-radius: 5px;
+						transition: background-color 0.3s;
+						cursor: pointer;
+					}
+
+					.btn-vote:hover {
+						background-color: #3acc5a;
+					}
+				}
+
+				.myscores-area {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					align-items: center;
+
+					.my-team,
+					.last-gw {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						padding: 3.5em;
+						img {
+							height: 480px;
+							width: 480px;
+							border: 2px solid rgb(255, 255, 255);
+							border-radius: 15px;
+						}
+
+						h4 {
+							padding: 1.4em;
+							text-align: center;
+							font-size: 1.6rem;
+							color: white;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.contact-area {
+		padding-top: 5em;
+
+		.input-area {
+			label,
+			input,
+			textarea {
+				min-width: 750px;
+			}
+
+			textarea {
+				min-height: 8em;
+			}
+		}
+
+		.checkbox {
+			width: 750px;
+		}
+
+		.contact-btns {
+			.send-btn,
+			.clear-btn {
+				font-size: 1rem;
+			}
+		}
+	}
+}
