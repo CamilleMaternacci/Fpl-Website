@@ -15,9 +15,9 @@ The site is fully responsive. You can use it on larger as well as smaller resolu
 
 ## Screenshots
 
-<img src="./screen/fpl_site.png" width="1200px">
-<img src="./screen/treasury_section.png" width="1200px">
-<img src="./screen/questionary_section.png" width="1200px">
+<img src="./screenshot/fpl_site.png" width="1200px">
+<img src="./screenshot/treasury_section.png" width="1200px">
+<img src="./screenshot/questionary_section.png" width="1200px">
 
 ## 🔗 Live Site
 [Live Site Here!](https://camillematernacci.github.io/Fpl-Website/)
