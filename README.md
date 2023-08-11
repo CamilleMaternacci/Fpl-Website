@@ -5,11 +5,11 @@
 This is my second major project that I have created on my own.
 
 The site is dedicated to the theme of the game Fantasy Premier League.
-On it you will find a story about me, instructions on how to start the game, tips, contact form.
+On this page you will find a story about me, instructions on how to start the game, tips, contact form.
 
-On the page you will find a **table with recommended players in two options**, which you can change with a button.
+On the site you will also find a **table with recommended players in two options**, which you can change with a button.
 In the News panel, there is a **Twitter widget** from which you can view the latest twits.
-You also have the option to **vote for a player in a poll**.
+In addition, you have an option to **vote for a player in a poll**.
 
 The site is fully responsive. You can use it on larger as well as smaller resolutions.
 
